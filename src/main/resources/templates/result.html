@@ -1,0 +1,14 @@
+<!DOCTYPE HTML>
+<html xmlns:th="https://www.thymeleaf.org">
+<head>
+<title>Software Value Tracker Result</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+ <div>Header</div>
+ <h1>Result</h1>
+ <p th:text="'id: ' + ${app.id}" />
+ <p th:text="'name: ' + ${app.appName}" />
+ <a href="/app">Submit another app</a>
+</body>
+</html>

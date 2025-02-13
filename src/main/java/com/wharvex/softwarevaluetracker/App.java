@@ -18,20 +18,24 @@ public class App {
     }
 
     public App(String appName) {
-	this.appName = appName;
+        this.appName = appName;
     }
 
     public Long getId() {
-	return id;
+        return id;
     }
 
     public String getAppName() {
-	return appName;
+        return appName;
+    }
+
+    public void setAppName(String appName) {
+        this.appName = appName;
     }
 
     @Override
     public String toString() {
-	return String.format("App[id=%d, appName='%s']", id, appName);
+        return String.format("App[id=%d, appName='%s']", id, appName);
     }
 
 }

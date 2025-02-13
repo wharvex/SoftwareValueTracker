@@ -1,0 +1,20 @@
+<!DOCTYPE HTML>
+<html xmlns:th="https://www.thymeleaf.org">
+<head>
+<title>Software Value Tracker App</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+ <div>Header Before Replacement</div>
+ <h1>Form</h1>
+ <form action="#" th:action="@{/app}" th:object="${app}" method="post">
+  <p>
+   App name: <input type="text" th:field="*{appName}" />
+  </p>
+  <p>
+   <input type="submit" value="Submit" /> <input type="reset"
+    value="Reset" />
+  </p>
+ </form>
+</body>
+</html>
