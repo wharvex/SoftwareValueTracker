@@ -1,5 +1,7 @@
 package com.wharvex.softwarevaluetracker;
 
+import java.beans.ConstructorProperties;
+
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -13,10 +15,10 @@ public class App {
     private Long id;
     private String appName;
 
-    // Exists only for the sake of JPA.
     protected App() {
     }
 
+    @ConstructorProperties({ "appName" })
     public App(String appName) {
         this.appName = appName;
     }
