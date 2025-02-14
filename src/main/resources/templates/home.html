@@ -1,10 +1,12 @@
 <!DOCTYPE HTML>
-<html>
+<html xmlns:th="https://www.thymeleaf.org">
 <head>
 <title>Software Value Tracker Home</title>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 </head>
 <body>
+ <div th:replace="~{header_fragment :: header}">Header Before
+  Replacement</div>
  <p>
   <a href="/app">App</a>
  </p>
